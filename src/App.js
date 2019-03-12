@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import List from './List'
 
 class App extends Component {
 
@@ -48,9 +49,7 @@ class App extends Component {
     render() {
         return (
         <div className="App">
-
-            {this.state.selectedItem}
-            {/* <List carsFruits={this.state.carsFruits} onChang = {this.onChang} selectedItem = {this.state.selectedItem}/> */}
+            <List carsFruits={this.state.carsFruits} onChang = {this.onChang} selectedItem = {this.state.selectedItem}/>
         </div>
         );
     }
